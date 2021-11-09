@@ -1,0 +1,26 @@
+name: CI/CD
+
+on:
+  puhs:
+    branches:
+      - master
+
+jobs:
+  ci-cd:
+    name: CI/CD
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "init repository"
+        uses: actions/checkout@v2
+
+      - name: "Setup Node"
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      
+      - name: "Install dependencies"
+        run: nom install
+        
+      - name: "Build app"
+          run: nom run build
