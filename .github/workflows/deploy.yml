@@ -23,4 +23,4 @@ jobs:
         run: npm install
         
       - name: "Build app"
-        un: npm run build
+        run: npm run build
