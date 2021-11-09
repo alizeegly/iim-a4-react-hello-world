@@ -23,4 +23,4 @@ jobs:
         run: nom install
         
       - name: "Build app"
-          run: nom run build
+        un: nom run build
