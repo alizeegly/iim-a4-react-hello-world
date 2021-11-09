@@ -20,7 +20,7 @@ jobs:
           node-version: '14'
       
       - name: "Install dependencies"
-        run: nom install
+        run: npm install
         
       - name: "Build app"
-        un: nom run build
+        un: npm run build
